@@ -19,7 +19,7 @@ var carro = {
     ano: 2008
 };
 
-for (var propriedade in carro) { // o in passa por cava atribuido do objeto
+for (var propriedade in carro) { // o in passa por cada atribuido do objeto
     var info = carro[propriedade]; 
     console.log(info)
 }
