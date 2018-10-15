@@ -29,6 +29,17 @@ for ( var all of map.entries() ) {
     console.log(all)
 }
 
+
+let numeros = [1,2,3,4,5,6,7]
+
+//principal diferença entre a iteração do map e array, é que o map retorna um novo array
+let resultMap = numeros.map( function(item, index, numeros) {
+        return item
+})
+console.log(resultMap)
+
+
+
 /**
  * Com a chegada do ES6, o JavaScript introduz duas novas estruturas de dados: Map e WeakMap. Essas estruturas, ao contrário da tradicional concepção de que todos objetos são mapas, são implementações reais de mapas como estrutura de dados, assim como já estamos acostumados a ver em outras linguagens. Estas novas estruturas nos permitem:
 

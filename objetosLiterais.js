@@ -62,6 +62,33 @@ const objeto2 = {
 
 objeto2.mostrarNome()
 
+
+/******* Convert Object in array *********************/
+
+let nomes = {
+    nome1: 'evandro',
+    nome2: 'vieira',
+    nome3: 'junior'
+}
+
+let nomesArray = [
+    {nome: 'Evandro'},
+    {nome: 'junior'}
+]
+
+let converterObjectInArray = Object.keys(nomes).map( (item) => {
+    return [String(item), nomes[item]]
+} )
+
+console.log(converterObjectInArray)
+
+let result = Object.keys(nomesArray).map( item => {
+    return String(item), nomesArray[item]
+} )
+console.log(result)
+
+
+
 /**
  * Resumo - Melhorias em Objetos Literais
 Seção 10, aula 59
